@@ -1,6 +1,6 @@
 # Progetto SO_2015: Shell con logger
 Implementare una shell interattiva (che accetti almeno comandi basilari) con le seguenti caratteristiche:
-* Deve accettare tre argomenti opzionali: "--prompt <prompt>", "--loglevel <logleve>" e "--logfile <logfile>" per settare un prompt personalizzato, un livello di "logging" (un valore tra "low", "middle", "high") e il file di log: argomenti errati devono mostrare un opportuno avviso.
+* Deve accettare tre argomenti opzionali: "--prompt <\prompt>\", "--loglevel <logleve>" e "--logfile <logfile>" per settare un prompt personalizzato, un livello di "logging" (un valore tra "low", "middle", "high") e il file di log: argomenti errati devono mostrare un opportuno avviso.
 * Mostra un prompt personalizzato (di default o settato con l'argomento) e accetta comandi tali che sono passati alla shell standard, a meno che il primo carattere non vuoto sia un punto esclamativo, in questo caso ciò che segue è interpretato come un comando “interno” speciale:
   * !showlevel : mostra il livello impostato (default o settato con l'argomento).
   * !logon : attiva il logging.
