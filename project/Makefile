@@ -44,6 +44,5 @@ prompt.o: prompt.c prompt.h
 # Cancellazione dei files e delle cartelle generate
 clean: cleanonly
 	@/bin/rm -rf bin/ assets/
-	@/bin/rm -rf log.txt
 cleanonly:
 	@/bin/rm -rf *~ .*~ *.BAK .*.BAK *.o
