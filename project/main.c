@@ -9,7 +9,7 @@
 
 #define init_prompt ">"
 #define init_loglevel 'm'
-#define init_logfile "./log.txt"
+#define init_logfile "/tmp/log.txt"
 #define init_logstatus 't'
 
 
