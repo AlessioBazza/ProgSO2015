@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 /* Librerie Personali */
 #include "functions.h"
@@ -125,7 +126,12 @@ void funcCommand(char* text, int pid, char* prompt, char* loglevel, char* logfil
 			commandFrom = 'i';
 		} else {
 			/* Prompt di Sistema */
-			int err = system(line);
+			int err;
+			if (strcmp(command, "cd") == 0) {
+				err = chdir(params);
+			} else {
+				err = system(line);
+			}
 			commandFrom = 'e';
 			/* Log Status */
 			if (err == 0) {
